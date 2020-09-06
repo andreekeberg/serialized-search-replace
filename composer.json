@@ -1,0 +1,36 @@
+{
+    "name": "andreekeberg/serialized-search-replace",
+    "type": "library",
+    "description": "Search and replace serialized strings, and update all string lengths",
+    "keywords": [
+        "search-replace",
+        "search",
+        "replace",
+        "serialize",
+        "unserialize",
+        "serialized"
+    ],
+    "homepage": "https://github.com/andreekeberg/serialized-search-replace",
+    "readme": "README.md",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "André Ekeberg",
+            "email": "hello@andreekeberg.se",
+            "homepage": "https://andreekeberg.se"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/andreekeberg/serialized-search-replace/issues"
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    },
+    "require": {
+        "php": ">=4.0.0"
+    },
+    "require-dev": {
+    }
+}
