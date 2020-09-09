@@ -43,12 +43,13 @@ class SerializedSearchReplace {
      * @param string|array $search
      * @param string|array $replace
      * @param string $subject
+     * @param int|null $count
      * @return string
      */
-    public static function replace($search, $replace, $subject)
+    public static function replace($search, $replace, $subject, &$count = null)
     {
         return self::repair(
-            str_replace($search, $replace, $subject)
+            str_replace($search, $replace, $subject, $count)
         );
     }
 }
