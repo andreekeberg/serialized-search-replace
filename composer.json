@@ -30,7 +30,5 @@
     },
     "require": {
         "php": ">=4.0.0"
-    },
-    "require-dev": {
     }
 }
