@@ -16,10 +16,9 @@ composer require andreekeberg/serialized-search-replace
 
 ## Usage
 
+**Basic usage**
+
 ```php
-/**
- * Returns: a:1:{s:3:"url";s:20:"https://example.com/";}
- */
 $output = SerializedSearchReplace::replace(
     'http://example.com',
     'https://example.com',
@@ -27,6 +26,33 @@ $output = SerializedSearchReplace::replace(
         'url' => 'http://example.com/'
     ])
 );
+```
+
+Returns:
+
+```
+a:1:{s:3:"url";s:20:"https://example.com/";}
+```
+
+**Getting the number of replacements performed**
+
+Passing `$count` by reference to get the total number of replacements performed:
+
+```php
+$output = SerializedSearchReplace::replace(
+    'http://example.com',
+    'https://example.com',
+    serialize([
+        'url' => 'http://example.com/'
+    ]),
+    $count
+);
+```
+
+Value of `$count`:
+
+```
+1
 ```
 
 ## Documentation
